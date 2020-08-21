@@ -10,6 +10,7 @@ fi
 export $(grep -v '#.*' .env | xargs)
 STAGE=$1
 
+docker build -t terraform-image .
 CONTAINER=$(
     docker create \
         --rm \
@@ -19,7 +20,7 @@ CONTAINER=$(
         -e AWS_DEFAULT_REGION \
         -e AWS_ACCOUNT_ID \
         -e S3_BUCKET_NAME \
-        hashicorp/terraform:0.12.29
+        terraform-image \
         sh scripts/entrypoint.sh ${STAGE}
 )
 
