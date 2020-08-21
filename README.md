@@ -55,4 +55,4 @@ Quickly setup a AWS Cloudfront + Lambda@Edge + S3 stack and host a static websit
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/let00/gatsby-source-amazon-paapi/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/let00/terraform-cloudfront-s3/blob/master/LICENSE) for more information.
