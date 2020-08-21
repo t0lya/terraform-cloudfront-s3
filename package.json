@@ -1,0 +1,22 @@
+{
+  "name": "terraform-cloudfront-s3",
+  "private": true,
+  "scripts": {
+    "plan": "sh deploy.sh plan",
+    "apply": "sh deploy.sh apply"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
