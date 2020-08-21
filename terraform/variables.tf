@@ -1,12 +1,12 @@
 variable "aws_region" {
-  type    = "string"
+  type    = string
   default = "us-east-1"
 }
 
 variable "aws_account_id" {
-  type = "number"
+  type = number
 }
 
 variable "s3_bucket_name" {
-  type = "string"
+  type = string
 }
